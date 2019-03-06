@@ -1,0 +1,42 @@
+<html>
+<head>
+  <script src="load/jquery-3.1.0.min.js"></script>
+  <script src="load/aktuelles.js"></script>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" href="load/stile.css">
+  <title>Physioteam Ahrensburg . Krankengymnastik . Physiotherapie</title>
+
+  <meta name="keywords" content="Krankengymnastik, Physiotherapie, Massage, Manuelle Therapie, Manuelle Lymphdrainage, Triggerpunkttherapie, Mulligan Concept, Medi-Taping, Personal Training, Hausbesuche, Arbeitsplatzberatung, K�ltetherapie, Naturmoorpackungen, Rotlicht, Hei�e Rolle, Inken Wilde, Thomas Glogau"/>
+  <meta name="description" content="Physioteam Ahrensburg . Inken Wilde . Thomas Glogau"/>
+  <meta name="robots" content="follow">
+  <meta name="author" content="Physioteam Ahrensburg . Inken Wilde . Thomas Glogau (c) 2010">
+</head>
+
+<body width="100%" leftmargin="0" topmargin="0" rightmargin="0">
+<div id="table"></div>
+<div id="contentDiv">
+  <br>
+  <br>
+  <h1 class="Stil1">Aktuelles</h1>
+  <br>
+  <div id="newsHolder">
+
+    <script>
+      initialPosts();
+    </script>
+
+  </div>
+</div>
+
+<script>
+  var imgname1 = "aktuelles1.jpg";
+  var imgname2 = "aktuelles2.jpg";
+  var imgname3 = "aktuelles3.jpg";
+  $("#table").load("load/coreTable.html", function()
+  {
+    document.getElementById("contentRow").appendChild(document.getElementById("contentDiv"));
+  });
+</script>
+
+</body>
+</html>

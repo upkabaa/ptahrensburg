@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="load/creatorStyle.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="load/stile.css" type="text/css" media="screen">
+    <script src="load/creatorJs.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      function onFrameDOMContentLoaded ()
+      {
+        var cssLink = document.createElement("link");
+        cssLink.href = "load/stile.css";
+        cssLink.rel = "stylesheet";
+        cssLink.type = "text/css";
+        document.getElementById("dynamicframe").contentDocument.head.appendChild(cssLink);
+        console.log("loaded");
+      };
+    </script>
+  </head>
+  <body onload="update(); document.f.ta.select(); document.getElementById('dynamicframe').contentWindow.addEventListener('DOMContentLoaded', onFrameDOMContentLoaded, true);">
+
+
+<form name="f" method="post" target="dynamicframe">
+
+
+<script type="text/javascript">edToolbar('canvas');</script>
+<textarea id="canvas" name="ta" rows="10" cols="140">
+</textarea>
+</form>
+
+<iframe name="dynamicframe" id="dynamicframe" src=""></iframe>
+<script>document.getElementById("canvas").value='<hr>';</script>
+  </body>
+</html>
